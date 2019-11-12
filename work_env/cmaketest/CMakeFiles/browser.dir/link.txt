@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libbrowser.so -o libbrowser.so CMakeFiles/browser.dir/main.c.o CMakeFiles/browser.dir/foo.c.o CMakeFiles/browser.dir/bar.c.o 

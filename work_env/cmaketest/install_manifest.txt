@@ -1,0 +1,2 @@
+/root/cmaketest/./bin/sharedapp
+/root/cmaketest/sup/libbrowser.so

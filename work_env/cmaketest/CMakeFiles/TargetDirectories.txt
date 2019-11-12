@@ -1,0 +1,11 @@
+/root/cmaketest/CMakeFiles/install.dir
+/root/cmaketest/CMakeFiles/list_install_components.dir
+/root/cmaketest/CMakeFiles/install/strip.dir
+/root/cmaketest/CMakeFiles/browser.dir
+/root/cmaketest/CMakeFiles/install/local.dir
+/root/cmaketest/CMakeFiles/chrome2.dir
+/root/cmaketest/CMakeFiles/edit_cache.dir
+/root/cmaketest/CMakeFiles/sharedapp.dir
+/root/cmaketest/CMakeFiles/chrome.dir
+/root/cmaketest/CMakeFiles/rebuild_cache.dir
+/root/cmaketest/CMakeFiles/chrome3.dir
