@@ -1,0 +1,33 @@
+CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
+PROJECT ("FP_project")
+MESSAGE (STATUS ${CMAKE_PROJECT_NAME})
+
+SET (CMAKE_CXX_FLAGS_DEBUG "-O0")
+SET (CMAKE_CXX_FLAGS_RELEASE "-O3")
+
+SET (CMAKE_BUILD_TYPE Debug)
+
+#빌드과정 모두출력
+SET (CMAKE_VERBOSE_MAKEFILE true)
+
+SET (SRCS
+    bind2nd.cc
+    )
+SET (EXENAME
+    ch4exe
+    )
+
+INCLUDE_DIRECTORIES(
+    ${CMAKE_SOURCE_DIR}/..
+    )
+
+ADD_EXECUTABLE(${EXENAME} ${SRCS})
+
+ADD_COMPILE_OPTIONS (
+    -std=c++14
+    -g    #Debug 심볼 테이블 포함
+    -Wall #모든 경로메시지 포함
+    )
+
+MESSAGE (WARNING ${CMAKE_C_COMPILER})# /usr/bin/cc) #COMPILER 경로 설정
+MESSAGE (WARNING ${CMAKE_CURRENT_SOURCE_DIR})

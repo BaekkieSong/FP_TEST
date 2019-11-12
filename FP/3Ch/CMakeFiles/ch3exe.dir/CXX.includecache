@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/FP/Ch3/person.h
+iostream
+-
+typeinfo
+-
+functional
+-
+vector
+-
+numeric
+-
+string
+-
+algorithm
+-
+
+/root/FP/Ch3/ramda.cc
+iostream
+-
+typeinfo
+-
+functional
+-
+vector
+-
+numeric
+-
+string
+-
+algorithm
+-
+ctime
+-
+memory
+-
+person.h
+/root/FP/Ch3/person.h
+
