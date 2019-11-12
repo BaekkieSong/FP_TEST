@@ -1,3 +1,0 @@
-/root/FP/4Ch/CMakeFiles/rebuild_cache.dir
-/root/FP/4Ch/CMakeFiles/ch4exe.dir
-/root/FP/4Ch/CMakeFiles/edit_cache.dir

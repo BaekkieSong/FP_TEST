@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../common/person.h
+iostream
+-
+typeinfo
+-
+functional
+-
+vector
+-
+numeric
+-
+string
+-
+algorithm
+-
+
+/home/b/FP_TEST/src/4Ch/bind2nd.cc
+iostream
+-
+typeinfo
+-
+functional
+-
+vector
+-
+numeric
+-
+string
+-
+algorithm
+-
+ctime
+-
+memory
+-
+common/person.h
+/home/b/FP_TEST/src/4Ch/common/person.h
+

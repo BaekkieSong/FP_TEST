@@ -128,5 +128,12 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd FileType c,cpp,java,php,javascript autocmd BufWritePre <buffer> :%s/\s\+$//e
 
+au BufReadPost *
+\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\ exe "norm g`\"" |
+\ endif
 
-
+"autocmd BufReadPost *
+"  \ if line(“‘\””) > 1 && line(“‘\””) <= line(“$”) |
+"  \   exe “normal! g`\”” |
+"  \ endif

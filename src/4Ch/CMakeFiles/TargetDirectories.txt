@@ -1,0 +1,3 @@
+/home/b/FP_TEST/src/4Ch/CMakeFiles/rebuild_cache.dir
+/home/b/FP_TEST/src/4Ch/CMakeFiles/ch4exe.dir
+/home/b/FP_TEST/src/4Ch/CMakeFiles/edit_cache.dir

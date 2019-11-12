@@ -100,7 +100,7 @@ fi
 
 export LANG=ko_KR.UTF-8
 
-export HOME=/root
+export HOME=/home/b
 export BASICAPP=${HOME}/basicapp
 
 export PATH="$PATH:/root/depot_tools"
