@@ -1,1 +1,0 @@
-/usr/bin/c++  -O0  -rdynamic CMakeFiles/ch4exe.dir/bind2nd.cc.o  -o ch4exe 
