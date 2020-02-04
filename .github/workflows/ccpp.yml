@@ -8,12 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@test
     - name: configure
-      run: ./configure
-    - name: make
+      run: cd src/4Ch
+      run: mkdir build & cd build
+      run: cmake ..
       run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      run: cd ..
+      run: rm -r build
