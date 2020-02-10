@@ -3,7 +3,7 @@ PROJECT ("GTestTest")
 MESSAGE (STATUS ${CMAKE_PROJECT_NAME})
 
 #Notice: Check googletest/googletest path
-SET (USER /root)
+SET (USER ~/)
 SET (GTEST_DIR ${USER}/googletest/googletest)
 MESSAGE (Warning "Check googletest path: " + ${GTEST_DIR})
 
