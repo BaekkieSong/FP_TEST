@@ -333,7 +333,9 @@ TEST(CaseStrOperation, StrCStr) {
 //return const char*
 TEST(CaseStrOperation, StrData) {
   std::string str = "test string";
-  char* c_str = new char[str.size()+1]{"test string"};
+//  char* c_str = new char[str.size()+1]{"test string"}; //doesn't work in C++11
+  char* c_str = new char[str.size()+1];
+  std::strcpy(c_str, str.c_str());
   EXPECT_EQ(str.size(), std::strlen(c_str));
   char* cpied_str = new char[12]; //need to assign memory
   //str.data() return const char*
