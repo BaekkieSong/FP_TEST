@@ -2,6 +2,11 @@ CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
 PROJECT ("std Test")
 MESSAGE (STATUS ${CMAKE_PROJECT_NAME})
 
+#Notice: Check googletest/googletest path
+SET (USER ~/)
+SET (GTEST_DIR ${USER}/googletest/googletest)
+MESSAGE (Warning "Check googletest path: " + ${GTEST_DIR})
+
 SET (CMAKE_CXX_FLAGS_DEBUG "-O0")
 SET (CMAKE_CXX_FLAGS_RELEASE "-O3")
 
