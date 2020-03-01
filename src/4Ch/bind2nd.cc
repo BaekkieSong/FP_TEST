@@ -59,15 +59,14 @@ class bind2nd_module {
     Function function_;
     Second second_;
 	public:
-	  bind2nd_module(Function function, Second second) : function_(function),
-	                                                         second_(second) {
+	  bind2nd_module(Function&& function, Second&& second) : function_(std::forward<Function>(function)),
+	                                                         second_(std::forward<Second>(second)) {
 	  }
 
 	  template<typename First>
     auto operator()(First&& first) const -> decltype(function_(std::forward<First>(first), second_)) {
       return function_(std::forward<First>(first), second_);
     }
-
 };
 template<typename Function, typename Second>
 bind2nd_module<Function, Second> //output
