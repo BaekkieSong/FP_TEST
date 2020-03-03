@@ -45,6 +45,13 @@ SET (EXENAME
     gtest.exe
     )
 
+INCLUDE_DIRECTORIES( #헤더만...
+    ${CMAKE_SOURCE_DIR}/src
+    ${GTEST_DIR}/include
+    )
+LINK_DIRECTORIES(
+    ${GTEST_DIR}/build/lib
+    )
 #Directory보다 아래!!!!!
 ADD_EXECUTABLE(${EXENAME} ${SRCS})
 
