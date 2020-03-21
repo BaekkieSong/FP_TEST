@@ -1,10 +1,12 @@
 # flask Server
 ## python3
 ### Downloads
-* apt install python3
+* sudo apt install python3
+* sudo apt install python3-pip
+* sudo apt install python3-flask
 ## flask
 ### Install
-* pip install flask
+* pip3 install flask
 * flask --version (check)
 ### Run(Default)
 * cd default
