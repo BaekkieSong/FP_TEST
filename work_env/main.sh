@@ -7,4 +7,4 @@ cp .vimrc ~/
 ./build_fp_test_base.sh
 cd
 ctags -R
-source .bashrc
+source ~/.bashrc
