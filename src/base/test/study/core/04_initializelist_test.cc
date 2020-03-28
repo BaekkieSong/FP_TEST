@@ -13,7 +13,7 @@ class B {
 };
 
 //void xx();
-TEST(CoreInitializeListTest, Default) {
+TEST(DISABLED_CoreInitializeListTest, Default) {
   A a;  //Test에선 확인 불가... Default Const 불림
   //func declaration
 //  A aa();     //OK, but Warning Generated.
