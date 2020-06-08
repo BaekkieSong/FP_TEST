@@ -5,6 +5,7 @@ cp ./settings/.vimrc ~/
 ./settings/install_packages.sh
 ./settings/build_googletest.sh
 ./settings/build_fp_test_base.sh
+cp ./cpplint/CPPLINT.cfg ~/
 cd ~/
 ctags -R
 source ~/.bashrc
