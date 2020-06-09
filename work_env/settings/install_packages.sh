@@ -5,4 +5,6 @@ sudo apt install cmake clang tmux language-pack-ko exuberant-ctags python3 pytho
 sudo locale-gen ko_KR.UTF-8
 sudo dpkg-reconfigure locales
 flask --version
+pip install cpplint
+cpplint --version
 
