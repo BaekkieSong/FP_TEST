@@ -19,6 +19,7 @@ SET (TEST_ETC
     test/etc/str_test.cc
     test/etc/cstring_test.cc
     test/etc/fstream_test.cc
+    test/etc/vector_test.cc
     )
 
 SET (STUDY_MODERN
@@ -34,7 +35,8 @@ SET (STUDY_CORE
     )
 
 SET (SRCS
-    ../../work_env/GTest/src/test_main.cc
+    test_main.cc
+#    ../../work_env/GTest/src/test_main.cc
     ${TESTSTRING}
     ${TEST_ETC}
     ${STUDY_MODERN}
@@ -73,6 +75,14 @@ ADD_COMPILE_OPTIONS (
 #    -Wall #모든 경로메시지 포함
     )
 
+INCLUDE_DIRECTORIES (
+    ${GTEST_DIR}/include
+    )
+LINK_DIRECTORIES (
+    /usr/bin/ld
+    /usr/bin/
+    ${GTEST_DIR}/build/lib
+    )
 #FIND_LIBRARY (gtest-lib gtest)
 TARGET_LINK_LIBRARIES (${EXENAME}
     gtest
